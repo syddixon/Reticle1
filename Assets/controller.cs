@@ -32,7 +32,7 @@ public class controller : MonoBehaviour
         {
             transform.Translate(speed * Time.deltaTime * Vector3.down);
         }
-        if(Input.GetKeyDown(KeyCode.LeftAlt))
+        if(Input.GetButtonDown("Fire1"))
         {
             GetComponent<AudioSource>().Play();
             Instantiate(explodePrefab, transform.position + explodePos, transform.rotation);
